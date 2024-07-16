@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+p{
+ width: 30%;
+ background-color: wheat;
+ border: 2px solid red;
+ padding: 10px;
+}
+
+</style>
+     <!-- link -->
+     <script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"
+    ></script>
+    <!-- link -->
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p>Lorem ipsum dolor sit, amet <em> consectetur </em> adipisicing elit. Mollitia fuga modi aliquid, minus amet delectus quis. Corporis aperiam incidunt <strong> nostrum quo, eligendi </strong>dolorem eos consectetur rerum laboriosam laborum atque ipsum.</p>
+    <br>
+    <button class="btn1">Text</button>
+    <button class="btn2">HTML</button>
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+         $(".btn1").click(function(){
+            alert($('p').text())
+         })
+
+         $(".btn2").click(function(){
+            alert($("p").html())
+         })
+    })
+</script>
+</html>

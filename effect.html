@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- link -->
+ <script
+ src="https://code.jquery.com/jquery-3.7.1.js"
+ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+ crossorigin="anonymous"
+></script>
+<!-- link -->
+</head>
+<body>
+   <button id="btn1">Hide</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn2">Show</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn3">Fade Out</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn4">Fade In</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn5">Fade Toggle</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn6">Fade To</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn7">Slide Up</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn8">Slide Down</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn9">Animation</button>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <button id="btn10">Animation stop</button>
+   <br>
+   <br>
+   <div style="width: 150px; height: 150px; background-color: yellow;"></div>
+</body>
+<script>
+
+jQuery.noConflict();
+jQuery(document).ready(function($){
+
+    // Hide
+    $("#btn1").click(function(){
+        $("div").hide(1000)
+    })
+
+    // Show 
+    $("#btn2").click(function(){
+        $("div").show(2000)
+    })
+
+    // Fade Out
+    $("#btn3").click(function(){
+        $("div").fadeOut(2000)
+    })
+
+    // Fade In
+    $("#btn4").click(function(){
+        $("div").fadeIn(2000)
+    })
+
+    // Fade Toggle
+    $("#btn5").click(function(){
+        $("div").fadeToggle(2000)
+    })
+
+    // Fade To
+    $("#btn6").click(function(){
+       $("div").fadeTo(1000,0.5)
+    })
+
+
+    // slide Up
+    $("#btn7").click(function(){
+        $("div").slideUp(2000)
+    })
+
+    // slide Down
+
+    $("#btn8").click(function(){
+        $("div").slideDown(2000)
+    })
+
+
+    // animation
+     $('#btn9').click(function(){
+        $("div").animate({
+            opacity:'0.5',
+            height:'700px',            
+        },3000);
+     });
+
+     $('#btn10').click(function(){
+        $("div").stop();
+     })
+    
+
+
+})
+
+</script>
+</html>

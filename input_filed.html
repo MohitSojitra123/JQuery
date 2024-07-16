@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <!-- link -->
+     <script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"
+    ></script>
+    <!-- link -->
+<body>
+
+    <h1>Employee Records</h1>
+    
+<form action="">
+    <p>Employee Name: <input type="text" id="ename" value="Amit Diwan"> </p>
+    
+    <p>Employee Department: <input type="text" id="ed" value="Tech"> </p>
+
+    <p>Employee Zone: <input type="text" id="ez" value="Nort"> </p>
+
+</form>
+
+  <button class="btn1">Get The Employee Name</button>
+  <button class="btn2">Get The Employee Depratement</button>
+  <button class="btn3">Get The Employee Zone</button>
+    
+</body>
+<script>    
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+
+        $(".btn1").click(function(){
+            alert($("#ename").val())
+        })
+
+        $(".btn2").click(function(){
+            alert($("#ed").val())
+        })
+
+        $(".btn3").click(function(){
+            alert($("#ez").val())
+        })
+
+
+
+    })
+</script>
+</html>

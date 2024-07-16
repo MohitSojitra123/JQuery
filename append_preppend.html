@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+<style>
+.box{
+    width: 40%;
+    height: auto;
+    background-color: aqua;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+
+</style>
+<body>
+    <div class="box">   
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae in placeat, itaque ducimus, ex repellat id nesciunt cum ab sequi nam enim, voluptatibus libero necessitatibus quisquam? Odio, minus animi.</p>
+    </div>
+<br>
+<br>
+    <button class="btn1">Append</button>
+    <br>
+    <button class="btn2">Prepend</button>
+    <br>
+    <button class="btn3">Before</button>
+    <br>
+    <button class="btn4">After</button>
+    <br>
+
+
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+        // append
+        $('.btn1').click(function(){
+          $("p").append("<br>New Text Add<br>")
+        })
+
+        // prepend
+        $('.btn2').click(function(){
+          $("p").prepend("<br>New Text Add<br>")
+        })
+
+        // before
+        $('.btn3').click(function(){
+          $("p").before("<br>New Text Add<br>")
+        })
+
+        // after
+        $('.btn4').click(function(){
+          $("p").after("<br>New Text Add<br>")
+        })
+    })
+</script>
+</html>

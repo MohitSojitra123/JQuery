@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+ <style>
+    .box{
+        width: 40%;
+        height: auto;
+        background-color: wheat;
+        border: 2px solid red;
+        padding: 10px;
+    }
+
+ </style>
+<body>
+
+     <div class="box">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum a autem ducimus! Vitae assumenda fugit eum ratione asperiores temporibus sunt placeat perspiciatis quaerat, esse quidem veritatis, animi, dolorum ducimus vero?</p>
+     </div>
+     <h3></h3>
+</body>
+<script>
+  jQuery.noConflict();
+  jQuery(document).ready(function($){
+
+    $(".box").on("click",function(e){
+    //   $("h3").html("Target Element : "+e.target.nodeName);
+      $("h3").html("Target Element : "+e.target.innerHTML);
+    })
+
+  })
+</script>
+</html>

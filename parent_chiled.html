@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+<style>
+.cl1{
+    width: 50%;
+    height: 700px;
+    border: 2px solid black;
+    margin: auto;
+    background-color: aqua;
+}
+
+.cl2{
+    width: 60%;
+    height: 500px;
+    border: 3px solid black;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.cl3{
+    width: 60%;
+    height: 400px;
+    border: 3px solid black;
+    margin: auto;
+    background-color: violet;
+}
+
+
+
+</style>
+<body>
+    <div class="cl1">
+        <h1>cl1</h1>
+        <div class="cl2">
+            <h1>cl2</h1>
+            <div class="cl3">
+              <h1>cl3</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+//   $(".cl1").parent().css('background','red')
+//   $(".cl2").parent().css('background','red')
+//   $(".cl3").parent().css('background','red')
+
+//   $(".cl1").parents().css('background','red')
+//   $(".cl2").parents().css('background','red')
+//   $(".cl3").parents().css('background','red')
+})
+</script>
+</html>

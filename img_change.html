@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous">
+</script>
+<!-- link  -->
+<body>
+    <img src="./asserts/as2.png" id="img1" alt="">
+    <button>Change</button>
+</body>
+
+<script>
+    jQuery.noConflict()
+    jQuery(document).ready(function($){    
+        $("button").click(function(){
+            $("#img1").attr("src","./asserts/as1.png")
+        });
+    });
+</script>
+
+</html>

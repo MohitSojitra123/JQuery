@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous">
+</script>
+<!-- link  -->
+ <style>
+    .cl1{
+        width: 40%;
+        height: auto;
+        background-color: wheat;
+        border: 2px solid red;
+        padding: 10px;
+    }
+ </style>
+<body>
+
+    <div class="cl1">
+        <h1>Lorem ipsum dolor sit.</h1>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum non blanditiis adipisci, necessitatibus aperiam esse ullam voluptatem aut sint, assumenda rem impedit voluptatum eius maxime dignissimos deserunt porro ducimus nulla.
+    </div>
+<br>
+<br>
+<br>
+    <button class="btn1">Empty</button>
+    <button class="btn2">Remove</button>
+
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+        
+        $(".btn1").click(function(){
+            // $(".cl1").empty()
+            $(".cl1 h1").empty()
+        })
+
+        $(".btn2").click(function(){
+            // $(".cl1").remove()
+            $(".cl1 h1").remove()
+        })
+
+    })
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+ <style>
+.box{
+    width: 150px;
+    height: auto;
+    background-color: aqua;
+    padding: 15px;
+}
+ </style>
+<body>
+    <div class="box">
+
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis neque, eveniet consectetur quis quidem quae magnam recusandae? Modi culpa delectus excepturi unde enim repellendus quidem. Earum dolorem labore id!
+
+    </div>
+</body>
+    <script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+    //   $("body").keydown(function(){
+      $("body").keypress(function(){
+        $(this).css("background","pink")
+      })
+
+      $("body").keyup(function(){
+        $(this).css("background","red")
+      })
+    })
+    </script>
+</html>

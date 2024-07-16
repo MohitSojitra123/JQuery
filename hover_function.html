@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <!-- link -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <!-- link -->
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod ut sunt autem iste ipsam minima repudiandae in dolorem? Nulla nam quidem aliquid necessitatibus ut? Cumque soluta odit repellendus corrupti nihil ratione excepturi culpa, recusandae sit, veritatis ducimus, harum exercitationem quo similique ab sunt aliquid illo asperiores iusto? Rem, a.</p>
+
+    <div style="width: 150px; height: 150px; background-color: yellowgreen;"></div>
+</body>
+<script>
+jQuery.noConflict()
+jQuery(document).ready(function($){
+    $("div").hover(function(){
+        $("p").hide();
+    },function(){
+      $("p").show();
+    })
+})
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+<body>
+    <div id="box">
+        <p class="p1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde numquam optio voluptate blanditiis amet doloribus veniam quis ipsam quia neque, sunt accusantium deleniti et quae perferendis ratione laborum beatae?
+        </p>
+    </div>
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+    console.log($("#box p").hasClass('.p2'))
+    console.log($("#box p").hasClass('p1'))
+})
+</script>
+</html>

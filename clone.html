@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- link -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <!-- link -->
+  <style>
+    .box1 {
+      width: 40%;
+      height: auto;
+      background-color: yellowgreen;
+      border: 2px solid red;
+    }
+
+    .box2 {
+      width: 40%;
+      height: auto;
+      background-color: violet;
+      border: 2px solid;
+    }
+  </style>
+  <body>
+    <div class="box1">
+      <h1>Somthing</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima
+        eum quaerat molestiae natus aperiam earum error facilis cum labore
+        exercitationem reiciendis tempora porro quos debitis iste, asperiores,
+        veniam odio?
+
+        <br />
+        <br />
+        <br />
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        distinctio eveniet quae optio harum mollitia cupiditate esse. Pariatur
+        obcaecati labore tenetur? Eligendi cum ratione, culpa dolor nesciunt
+        magnam reiciendis esse.
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="box2"k>
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt
+        adipisci fugiat non corporis, sunt id qui! Ex expedita facere totam
+        atque ipsam voluptates, possimus doloribus modi, quo ducimus labore.
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <button class="btn">Clone</button>
+  </body>
+
+  <script>
+    jQuery.noConflict();
+    jQuery(document).ready(function ($) {
+      $(".btn").click(function () {
+        $(".box1 h1").clone().prependTo(".box2");
+        $(".box1 p").clone().appendTo(".box2");
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous">
+</script>
+<!-- link -->
+
+<style>
+    .myclass{
+        color:tomato;
+        background-color: antiquewhite;
+        border: 2px solid red;
+    }
+
+    .cl1{
+        color: red;
+    }
+</style>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe laudantium voluptatibus officia, nihil nostrum vel quam explicabo inventore provident deleniti ex maxime autem, harum a. Suscipit quasi enim quam nesciunt ab facilis similique voluptatibus odio veritatis culpa esse, iure perspiciatis sunt obcaecati corrupti hic qui natus nisi nam illo eius.</p>
+
+    <p class="cl1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, laborum temporibus aliquid fugit nesciunt, numquam enim placeat repellat officiis voluptate porro! Necessitatibus perspiciatis itaque quis aut. Sequi pariatur explicabo inventore!
+    </p>
+
+    <button id="add">Add CSS</button>
+    <button id="remove">Remove CSS</button>
+    <button id="toggle">Toggle CSS</button>
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+       
+        // Add CSS
+
+        $("#add").click(function(){
+            $("p").addClass("myclass");
+        });
+
+        // Remove CSS
+        $("#remove").click(function(){
+            $("p").removeClass("myclass");
+        });
+
+        // Toggle
+
+        $("#toggle").click(function(){
+            $("p").toggleClass("myclass");
+        })
+
+        // Get CSS Property
+
+        check_color=$(".cl1").css("color")
+        console.log(check_color)
+   });
+</script>
+</html>

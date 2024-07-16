@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+ <style>
+    .mainouter{
+        width: 40%;
+        height: 600px;
+        background-color: yellowgreen;
+    }
+
+    .outer{
+        width: 50%;
+        height: 400px;
+        background-color: violet;
+    }
+
+    .inner{
+        width: 50%;
+        height: 300px;
+        background-color: turquoise;
+    }
+
+    .inner span{
+        width: 20%;
+        display: inline-block;
+        height: 150px;
+        background-color: rgb(31, 56, 44);
+        color: white;
+        font-size: 40px;
+    }
+ </style>
+<body>
+    <div class="mainouter">
+        <h1>main outer</h1>
+        <div class="outer">
+            <h1>outer</h1>
+            <div class="inner">
+                <h1>inner</h1>
+                <span class="text">A</span>
+                <span>B</span>
+                <span>C</span>
+                <span>D</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+
+    //    $(".inner").children().css("background","red")
+
+    //    $(".outer").children().css("background","red")
+
+    //    $(".mainouter").children().css("background","red")
+
+    //    $(".inner").children(".text").css("background","red")
+
+       $(".inner").find(".text").css("background","red")
+
+        
+
+    })
+</script>
+</html>

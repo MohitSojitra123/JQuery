@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+ <style>
+    .box{
+        background-color: antiquewhite;
+        border: 2px solid red;
+        width: 40%;
+        height: auto;
+        padding: 10px;
+    }
+ </style>
+<body>
+    <div class="box">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident dolores deserunt? Iste quis et non? Distinctio quae doloribus eum repellendus ratione nihil saepe neque? Veritatis ad corrupti porro esse?</p>
+    </div>
+    <br>
+    <button id="hide1">Hide</button>
+   <br>
+   <br>
+    <button id="show1">Show</button>
+   <br>
+   <br>
+    <button id="Togg">Toggle</button>
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+       
+        $("#hide1").click(function(){
+            $(".box").hide(3000)
+        })
+
+        $("#show1").click(function(){
+            $(".box").show(3000)
+        })
+
+        $("#Togg").click(function(){
+            $(".box").toggle(2000)
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Jquery Link -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- Jquery Link -->
+<body>
+
+ <form action="" method="get" id="form123">
+        <input type="text" id="input1">
+
+        <input type="submit">
+</form>
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+
+    // $('#input1').focus(function(){
+    //     $(this).css("background-color", "red");
+    // })
+
+    // $('#input1').blur(function(){
+    //     $(this).css("background-color", "green")
+    // })
+
+    $('#form123').submit(function(e){
+         console.log("Submit Successfully..")
+         e.preventDefault();
+    })
+});
+</script>
+</html>

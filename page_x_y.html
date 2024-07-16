@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous">
+</script>
+<!-- link  -->
+ <style>
+    .box{
+        width: 900px;
+        height: 500px;
+        background-color: antiquewhite;
+        border: 2px solid red;
+        margin: auto;
+    }
+
+    .box2{
+        width: 50px;
+        height: 50px;
+        background-image: url(./asserts/ball.jpg);
+        background-color: aqua;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+ </style>
+<body>
+    <div class="box"></div>
+
+    <div class="box2"></div>
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+        $(document).mousemove(function(e){
+            $('.box').text("X: "+e.pageX + "  Y: "+e.pageY)
+
+            var x=e.pageX;
+            var y=e.pageY;
+
+            $('.box2').offset({top:y-20,left:x+20})
+
+        })
+
+    })
+</script>
+</html>

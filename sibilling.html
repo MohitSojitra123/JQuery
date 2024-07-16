@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <!-- link -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <!-- link -->
+<body>
+    
+    <ul>
+        <!-- li*6{chiled $} -->
+        <li>chiled 1</li>
+        <li>chiled 2</li>
+        <li id="item1">chiled 3</li>
+        <li>chiled 4</li>
+        <li id="item2">chiled 5</li>
+        <li id="item3">chiled 6</li>
+    </ul>
+
+</body>
+<script>
+
+jQuery.noConflict()
+jQuery(document).ready(function($){
+
+    var ele1=$("#item1").siblings(); 
+    var ele1=$("#item1").next(); 
+    var ele1=$("#item1").next().next(); 
+    var ele1=$("#item1").nextAll(); 
+    var ele1=$("#item1").nextUntil("#item3"); 
+    
+    
+    var ele1=$("#item1").prev(); 
+    var ele1=$("#item1").prevAll();  
+    var ele1=$("#item1").prevUntil();  
+
+
+    var ele1=$("#item1").next();  
+    var ele1=$("#item1").nextAll();  
+    var ele1=$("#item1").nextUntil();  
+
+
+    ele1.css("border","1px solid red")
+
+})
+
+</script>
+</html>

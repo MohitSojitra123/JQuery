@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Jquery Link -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- Jquery Link -->
+<body>
+    
+    <img src="./asserts/as1.png" width="500px" height="500px" id="img1" alt="">
+    <br>
+    <button id="hideimg">Hide Img</button>
+    <br>
+    <button id="showimg">Show Img</button>
+    <br>
+    <button id="btn-toggle">Image</button>
+    <br>
+    <button id="fad_in">Fad In</button>
+    <br>
+    <button id="fad_out">Fad Out</button>
+    <br>
+    <button id="fad_toggle">Fad Toggle</button>
+    <br>
+    <button id="fad_toggle_to">Fad To</button>
+    <br>
+    <button id="slide_down">Slide Down</button>
+    <br>
+    <button id="slide_up">Slide Up</button>
+    <br>
+    <button id="slide_toggle ">Slide Toggel</button>
+    
+
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+   
+    // Hide
+
+    $('#hideimg').click(function(){
+        $('#img1').hide(5000,function(){
+            console.log("Image Is Hide")
+        })
+    })
+
+    // show
+  
+    $('#showimg').click(function(){
+        $('#img1').show(5000,function(){
+            console.log("Image Is Show")
+        })
+    })
+
+    // toggle
+
+    $('#btn-toggle').click(function(){
+        $("#img1").toggle(3000,function(){
+            console.log("Working Proper")
+        })
+    })
+
+
+    // FadOut
+
+    $('#fad_out').click(function(){
+        $("#img1").fadeOut(500,function(){
+            console.log("Fade Out")
+        })
+    })
+
+    // Fad In
+
+    
+    $('#fad_in').click(function(){
+        $("#img1").fadeIn(3000,function(){
+            console.log("Fade In")
+        })
+    })
+
+    //  fad Toggle
+
+    $('#fad_toggle').click(function(){
+        $("#img1").fadeToggle(3000,function(){
+            console.log("Fade Togggle")
+        })
+    })
+    
+    //Fad To
+    $('#fad_toggle_to').click(function(){
+        $("#img1").fadeTo(1000, 0.5,function(){
+            console.log("Fade To")
+        })
+    })
+
+    // slide up
+
+    $('#slide_up').click(function(){
+        $("#img1").slideUp(1000,function(){
+            console.log("Image Slid Up")
+        })
+    })
+
+    // slide Down
+
+    $('#slide_down').click(function(){
+        $("#img1").slideDown(1000,function(){
+            console.log("Image Slid Down")
+        })
+    })
+
+    // slide Toggle
+
+    $('#slide_toggle').click(function(){
+        $("#img1").slideToggle(1000,function(){
+            console.log("Image Slid Up")
+        })
+    })
+
+
+})
+</script>
+</html>

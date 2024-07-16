@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous">
+</script>
+<!-- link  -->
+<body>
+
+   <ul id="list">
+
+    <li>
+     <span id="span1">item 1</span>
+     <span id="span2">item 2</span>
+    </li>
+
+    <li>
+        <span id="span3">item 2.2</span>  
+    </li>
+
+</ul>
+
+</body>
+
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+    
+    // var ele1=$("#span1").parent()
+    // var ele1=$("#span1").parents()
+    // var ele1=$("#span1").parentsUntil("ul")
+    // console.log(ele1)
+    // ele1.css("border","1px solid red")
+
+
+    // var ele2=$("#list").children()
+    var ele2=$("#list").find("#span2")
+    console.log(ele2)
+    ele2.css("border","2px solid red")
+
+})
+
+</script>
+
+</html>

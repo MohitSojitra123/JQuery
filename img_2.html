@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Jquery Link -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <!-- Jquery Link -->
+
+  <style>
+    #img1 {
+      position: relative;
+    }
+  </style>
+
+  <body>
+    <img
+      src="./asserts/bb_1.jpg"
+      width="500px"
+      height="500px"
+      alt=""
+      id="img1"
+    />
+    <br />
+    <button id="ani1">Animation 1</button>
+  </body>
+  <script>
+    jQuery.noConflict();
+    jQuery(document).ready(function ($) {
+      $("#ani1").click(function () {
+        $("#img1").animate({ left: "+=80" }, 1000, function () {
+          console.log("Img Is Animated....");
+        });
+      });
+    });
+  </script>
+</html>

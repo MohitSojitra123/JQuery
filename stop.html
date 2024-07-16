@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+ <style>
+.box{
+    width: 10%;
+    height: 150px;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    position: relative;
+}
+ </style>
+<body>
+    <div class="box">
+        Lorem, ipsum dolor.
+    </div>
+
+    <button id="ani1">Start</button>
+    <button id="ani2">Stop</button>
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+  $("#ani1").click(function(){
+ 
+    $(".box").animate({left:'200px'},3000)
+    $(".box").animate({fontSize:'50px'},3000)
+  })
+
+  $("#ani2").click(function(){
+      $(".box").stop(true);
+  })
+//   $("#ani2").click(function(){
+//       $(".box").stop();
+//   })
+
+
+})
+</script>
+</html>

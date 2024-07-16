@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- link  -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"
+></script>
+<!-- link  -->
+<body>
+    <form action="" id="sf">
+    <label for="">Name :==</label>
+    <input type="text" id="name">
+
+    <label for="">Class :==</label>
+    <input type="text" id="class1">
+
+    <select name="" id="choice">
+      <option value="item 1">item 1</option>
+      <option value="item 2">item 2</option>
+      <option value="item 3">item 3</option>
+      <option value="item 4">item 4</option>
+      <option value="item 5">item 5</option>
+    </select>
+
+    <input type="submit">
+
+</form>
+
+</body>
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+  $('#sf').submit(function(){
+     var name=$("#name").val();
+     var class1=$("#class1").val();
+     var choice=$("#choice").val();
+
+
+
+     alert(name + class1 + choice)
+  })
+})
+</script>
+</html>
